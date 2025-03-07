@@ -126,7 +126,9 @@
                 <option>5:00 Available</option>
                 <option>6:00 Available</option>
             </select>
-            <button onclick="openPrescriptionTool()">Process Prescription</button>
+            <button onclick="window.open('https://medichandwritingtotextconvgit-jxhmz5xpifdpowdgmw5o25.streamlit.app/', '_blank')">
+                Process Prescription
+            </button>
             <button>Book Appointment</button>
         </div>
         <div class="footer">SHREE GURU</div>
@@ -140,9 +142,9 @@
     <script>
         function openPrescriptionTool() {
             console.log("Opening prescription tool...");
-            document.getElementById('streamlitIframe').src = 'https://medichandwritingtotextconvgit-jxhmz5xpifdpowdgmw5o25.streamlit.app/?iframe=true';
+            var iframe = document.getElementById('streamlitIframe');
+            iframe.src = 'https://medichandwritingtotextconvgit-jxhmz5xpifdpowdgmw5o25.streamlit.app/';
             document.getElementById('prescriptionFrame').style.display = 'block';
-            console.log("Prescription frame should be visible now");
         }
         
         function closePrescriptionTool() {
