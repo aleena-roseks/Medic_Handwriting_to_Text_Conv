@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Guru Clinic</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('front_img.jpg') no-repeat center center/cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 60, 80, 0.6);
+        }
+        .appointment-box {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .appointment-box h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .appointment-box input, .appointment-box select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .appointment-box button {
+            width: 100%;
+            padding: 10px;
+            background: teal;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        .clinic-info {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            left: auto;
+            color: white;
+            text-align: right;
+        }
+        .clinic-info h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .clinic-info p {
+            font-size: 28px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #005f6b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .prescription-frame {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: rgba(0,0,0,0.8);
+        }
+        .prescription-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            background: red;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="clinic-info">
+            <h1>SHREE GURU CLINIC</h1>
+            <p>CONTACT: 9844999137</p>
+        </div>
+        <div class="appointment-box">
+            <h3>Book Appointment</h3>
+            <input type="text" placeholder="Phone number">
+            <input type="text" placeholder="Full Name">
+            <select>
+                <option>5:00 Available</option>
+                <option>6:00 Available</option>
+            </select>
+            <button onclick="openPrescriptionTool()">Process Prescription</button>
+            <button>Book Appointment</button>
+        </div>
+        <div class="footer">SHREE GURU</div>
+    </div>
+    
+    <div id="prescriptionFrame" class="prescription-frame">
+        <button class="close-btn" onclick="closePrescriptionTool()">×</button>
+        <iframe id="streamlitIframe" src=""></iframe>
+    </div>
+
+    <script>
+        function openPrescriptionTool() {
+            // Set the iframe source to your Streamlit app URL
+            document.getElementById('streamlitIframe').src = 'https://medichandwritingtotextconvgit-jxhmz5xpifdpowdgmw5o25.streamlit.app/';
+            document.getElementById('prescriptionFrame').style.display = 'block';
+        }
+        
+        function closePrescriptionTool() {
+            document.getElementById('prescriptionFrame').style.display = 'none';
+            document.getElementById('streamlitIframe').src = '';
+        }
+    </script>
+</body>
+</html>
