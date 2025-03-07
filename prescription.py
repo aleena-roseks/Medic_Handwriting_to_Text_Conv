@@ -15,10 +15,10 @@ from langchain import globals
 from langchain_core.runnables import chain
 from langchain_core.output_parsers import JsonOutputParser
 
-# Import API key - modify this as needed
-from keys import OPENAI_API_KEY
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-globals.set_debug(False)
+# In your prescription.py
+import streamlit as st
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = openai_api_key
 
 # Set page configuration
 st.set_page_config(layout="wide", page_title="Shree Guru Clinic - Prescription Parser")

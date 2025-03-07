@@ -1,16 +1,6 @@
-# Core Libraries
 streamlit
 pandas
 pydantic
-python-dotenv
-
-# OpenAI Integration
 langchain
-langchain-core
 langchain-openai
-
-# Image Processing
-Pillow
-
-# Other Utilities
-base64
+langchain-core
