@@ -139,9 +139,10 @@
 
     <script>
         function openPrescriptionTool() {
-            // Set the iframe source to your Streamlit app URL
-            document.getElementById('streamlitIframe').src = 'https://medichandwritingtotextconvgit-jxhmz5xpifdpowdgmw5o25.streamlit.app/';
+            console.log("Opening prescription tool...");
+            document.getElementById('streamlitIframe').src = 'https://medichandwritingtotextconvgit-jxhmz5xpifdpowdgmw5o25.streamlit.app/?iframe=true';
             document.getElementById('prescriptionFrame').style.display = 'block';
+            console.log("Prescription frame should be visible now");
         }
         
         function closePrescriptionTool() {

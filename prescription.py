@@ -19,6 +19,11 @@ from langchain_core.output_parsers import JsonOutputParser
 import streamlit as st
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = openai_api_key
+st.set_page_config(
+    page_title="Prescription Parser",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
 # Set page configuration
 st.set_page_config(layout="wide", page_title="Shree Guru Clinic - Prescription Parser")
