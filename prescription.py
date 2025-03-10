@@ -25,9 +25,6 @@ st.set_page_config(
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = openai_api_key
 
-# Set page configuration
-st.set_page_config(layout="wide", page_title="Shree Guru Clinic - Prescription Parser")
-
 # Load custom CSS
 def local_css(file_name):
     try:
