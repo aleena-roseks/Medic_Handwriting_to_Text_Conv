@@ -44,7 +44,7 @@ NumPy
 
 Clone the Repository
 
-git clone https://github.com/your-username/medic_handwriting_to_text_conv.git
+git clone [https://github.com/aleena-roseks/Medic_Handwriting_to_Text_Conv.git]
 
 cd medic_handwriting_to_text_conv
 
