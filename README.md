@@ -13,9 +13,9 @@ Text Extraction: Handwritten text is extracted using a trained model.
 Language Model Parsing: The extracted text is passed through OpenAI's language model for contextual understanding.
 
 Output Generation: The final parsed text is displayed and can be exported as a structured digital file.
-**
-Key Features
-**
+
+**Key Features**
+
 Handwriting recognition for medical prescriptions.
 
 Streamlit-based user-friendly interface.
@@ -57,8 +57,8 @@ Activate the Virtual Environment
 **For Windows:**
 
 venv\Scripts\activate
-**
-For macOS/Linux:**
+
+**For macOS/Linux:**
 
 source venv/bin/activate
 
@@ -77,8 +77,8 @@ OPENAI_API_KEY = "your_openai_api_key"
 
 streamlit run prescription.py
 
-**Execution Flow
-**
+**Execution Flow**
+
 The user uploads an image of a handwritten prescription.
 
 The image undergoes preprocessing for noise reduction and enhancement.
@@ -88,9 +88,9 @@ The text extraction model extracts text from the image.
 The extracted text is sent to OpenAI's model for language understanding.
 
 The final output is displayed on the Streamlit interface.
-**
-Outputs
-**
+
+**Outputs**
+
 Extracted text in a structured format.
 
 Downloadable text or CSV file.
