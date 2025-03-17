@@ -1,9 +1,8 @@
-# Handwriting_to_Text_Conv
-Project Overview
+**Project Overview**
 
 The Medic Handwriting to Text Conversion project is a Streamlit-based web application designed to convert handwritten medical prescriptions into structured digital text. It leverages deep learning models, including OpenAI's language models and computer vision techniques, to accurately recognize and parse handwritten text.
 
-Project Workflow
+**Project Workflow**
 
 Input Data Handling: Users upload images of handwritten prescriptions.
 
@@ -15,7 +14,7 @@ Language Model Parsing: The extracted text is passed through OpenAI's language m
 
 Output Generation: The final parsed text is displayed and can be exported as a structured digital file.
 
-Key Features
+**Key Features**
 
 Handwriting recognition for medical prescriptions.
 
@@ -25,7 +24,7 @@ Support for multiple languages.
 
 Secure and private handling of sensitive medical data.
 
-System Requirements
+**System Requirements**
 
 Python 3.10 or higher
 
@@ -41,11 +40,12 @@ Pandas
 
 NumPy
 
-Installation Steps
+**Installation Steps**
 
 Clone the Repository
 
-git clone https://github.com/your-username/medic_handwriting_to_text_conv.git
+git clone [https://github.com/aleena-roseks/Medic_Handwriting_to_Text_Conv.git]
+
 cd medic_handwriting_to_text_conv
 
 Create a Virtual Environment
@@ -54,30 +54,30 @@ python -m venv venv
 
 Activate the Virtual Environment
 
-For Windows:
+**For Windows:**
 
 venv\Scripts\activate
 
-For macOS/Linux:
+**For macOS/Linux:**
 
 source venv/bin/activate
 
-Install the Dependencies
+**Install the Dependencies**
 
 pip install -r requirements.txt
 
-Set Up API Key for OpenAI
+**Set Up API Key for OpenAI**
 
 Create a .streamlit/secrets.toml file.
 
 [secrets]
 OPENAI_API_KEY = "your_openai_api_key"
 
-Run the Streamlit App
+**Run the Streamlit App**
 
 streamlit run prescription.py
 
-Execution Flow
+**Execution Flow**
 
 The user uploads an image of a handwritten prescription.
 
@@ -89,13 +89,13 @@ The extracted text is sent to OpenAI's model for language understanding.
 
 The final output is displayed on the Streamlit interface.
 
-Outputs
+**Outputs**
 
 Extracted text in a structured format.
 
 Downloadable text or CSV file.
 
-Troubleshooting
+**Troubleshooting**
 
 Streamlit Page Config Error: Ensure st.set_page_config() is the first Streamlit command.
 
@@ -103,7 +103,7 @@ Module Not Found Error: Install missing modules with pip install module_name.
 
 API Key Error: Verify the correct path and content of the .streamlit/secrets.toml file.
 
-Future Scope
+**Future Scope**
 
 Multilingual handwriting recognition.
 
@@ -111,8 +111,13 @@ Integration with Electronic Health Records (EHR) systems.
 
 Improved accuracy for complex prescriptions.
 
-Contributors
+**Contributors**
 
 Aleena Rose K Sunil
 
+Anna Biju
+
+Dora Liz Dileep
+
+Aravind Saju Krishna
 
