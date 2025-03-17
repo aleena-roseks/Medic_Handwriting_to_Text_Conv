@@ -114,7 +114,10 @@ Improved accuracy for complex prescriptions.
 **Contributors**
 
 Aleena Rose K Sunil
+
 Anna Biju
+
 Dora Liz Dileep
+
 Aravind Saju Krishna
 
